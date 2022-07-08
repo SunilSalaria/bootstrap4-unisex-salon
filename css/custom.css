@@ -1,0 +1,408 @@
+/* ================================ */
+
+
+/* Bootstrap override classes */
+
+
+/* ================================ */
+
+
+/* ========== primary override======*/
+
+.text-primary {
+    color: #334252 !important;
+}
+
+.bg-primary {
+    background-color: #334252 !important;
+}
+
+.btn-primary {
+    background-color: #334252 !important;
+}
+
+
+/* ===== warning override ==========*/
+
+.text-warning {
+    color: #b69e59 !important;
+}
+
+.btn-warning {
+    background-color: #b69e59 !important;
+}
+
+.btn-outline-warning {
+    color: #b69e59 !important;
+    border-color: #b69e59 !important;
+}
+
+.btn-outline-warning:hover {
+    color: #fff !important;
+    background-color: #b69e59 !important;
+    border-color: #b69e59 !important;
+}
+
+
+/* ========= light override========= */
+
+.bg-light {
+    background-color: #f0f3f1 !important;
+}
+
+
+/* === Unisex custom common classes === */
+
+section {
+    padding: 60px 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #334252;
+}
+
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn:active {
+    background-color: #b69e59 !important;
+    color: #334252 !important;
+}
+
+.heading {
+    position: relative;
+}
+
+.heading h1 {
+    position: relative;
+    font-weight: 700;
+    border-bottom: 1px solid#b69e59;
+    margin-bottom: 20px;
+}
+
+.heading h1::after {
+    display: block;
+    position: absolute;
+    content: " ";
+    left: 50%;
+    bottom: -5px;
+    font-size: 9px;
+    height: 9px;
+    width: 9px;
+    background-color: #b69e59;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.line {
+    width: 100px;
+    height: 0.3rem;
+    background: #b69e59;
+    transition: width 2s;
+    margin: auto;
+}
+
+.effect:hover .line {
+    width: 150px;
+}
+
+input[type="text"]:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+textarea {
+    outline: none !important;
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+}
+
+
+/* ======= header section ============== */
+
+#mainNav .navbar-toggler {
+    outline: none !important;
+    border: 1px solid white !important;
+}
+
+
+/* ========= Video section ============== */
+
+#home .shade::after {
+    background-color: #000;
+    content: "";
+    opacity: 0.7;
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#home .text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#home video {
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+/* ========== About Us section ============== */
+
+#about .visible {
+    z-index: 1;
+}
+
+
+/* ========== Reviews section ============== */
+
+#reviews .carousel-item>img {
+    height: 100px;
+    margin-bottom: 100px;
+}
+
+#reviews .position-absolute {
+    bottom: 86px;
+    left: 19%;
+}
+
+#reviews .carousel .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+#reviews .indicators-down {
+    position: absolute;
+    bottom: 20px;
+    left: -86px;
+}
+
+#reviews .carousel-indicators .active {
+    background-color: #b69e59;
+}
+
+#reviews .bg-img {
+    background-image: url(../assets/img/testimony-img.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+#reviews .bg-img::before {
+    background-color: #000;
+    content: "";
+    opacity: 0.7;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ====== Footer section ======== */
+
+#footer .twitter {
+    background-image: url(../assets/img/footer-icons.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+#footer .linkedin {
+    background-image: url(../assets/img/footer-icons.png);
+    background-repeat: no-repeat;
+    background-position: -78px 0;
+}
+
+#footer .facebook {
+    background-image: url(../assets/img/footer-icons.png);
+    background-repeat: no-repeat;
+    background-position: -233px 0;
+}
+
+#footer .skype {
+    background-image: url(../assets/img/footer-icons.png);
+    background-repeat: no-repeat;
+    background-position: -156px 0;
+}
+
+#footer .flickr {
+    background-image: url(../assets/img/footer-icons.png);
+    background-repeat: no-repeat;
+    background-position: -310px 0;
+}
+
+#footer a {
+    height: 56px;
+    width: 56px;
+    display: inline-block;
+    margin: 10px;
+}
+
+#footer a:hover {
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+#footer .twitter:hover {
+    background-position: 0 -56px;
+}
+
+#footer .facebook:hover {
+    background-position: -233px -56px;
+}
+
+#footer .skype:hover {
+    background-position: -156px -56px;
+}
+
+#footer .linkedin:hover {
+    background-position: -78px -56px;
+}
+
+#footer .flickr:hover {
+    background-position: -310px -56px;
+}
+
+
+/* ========== Media Query ============== */
+
+
+/* =====Media Query for screen up to 768px== */
+
+@media(max-width:767.98px) {
+    #home video {
+        height: 50vh;
+        object-fit: cover;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    #home .btn {
+        font-size: 0.9rem;
+        padding: 3px 5px;
+    }
+    header .bg-transparent {
+        background-color: #334252!important;
+    }
+    #reviews .indicators-down {
+        position: absolute;
+        bottom: 23px;
+        left: -49px;
+    }
+    #reviews .position-absolute {
+        bottom: 92px;
+        left: 127px;
+    }
+}
+
+
+/* ======Media Query for iphone 5se 330px to 373px===== */
+
+@media(min-width:320px) and (max-width:373px) {
+    #home .col-12 {
+        margin-top: 40px;
+    }
+    #reviews .indicators-down {
+        position: absolute;
+        bottom: 23px;
+        left: -37px;
+    }
+}
+
+
+/* ======Media Query for iphone ipad 768px to 1023px===== */
+
+@media(min-width:768px) and (max-width:1023px) {
+    header .bg-transparent {
+        background-color: #334252!important;
+    }
+    #home video {
+        height: 50vh;
+        object-fit: cover;
+    }
+}
+
+
+/* ======Media Query for iphone ipad 1024px===== */
+
+@media(max-width:1024px) {
+    #home video {
+        height: 50vh;
+        object-fit: cover;
+    }
+}
+
+
+/* ======Media Query for medium screen 768px===== */
+
+@media(min-width:768px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    #home p {
+        font-size: 1.6rem;
+    }
+}
+
+
+/*==== Media query for ipdad pro 1024px =====*/
+
+@media(min-width:993px) and (max-width:1066px) {
+    #services .icon {
+        height: 45px;
+    }
+    #reviews .indicators-down {
+        position: absolute;
+        bottom: 22px;
+        left: -63px;
+    }
+    #reviews .position-absolute {
+        bottom: 87px;
+        left: 127px;
+    }
+}
+
+
+/*==== Media query for ipdad 768px =====*/
+
+@media(min-width:768px) and (max-width:834px) {
+    #reviews .indicators-down {
+        position: absolute;
+        bottom: 22px;
+        left: -100px;
+    }
+}
+
+
+/* ==== Media query for Desktop Screen 1200px== */
+
+@media(min-width:1100px) {
+    #services .desk {
+        margin: 50px 0px;
+    }
+    #services p {
+        padding: 0px 58px;
+    }
+}
